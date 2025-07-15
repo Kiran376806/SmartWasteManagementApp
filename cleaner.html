@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cleaner Dashboard | Smart Waste App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #e0f7fa;
+    }
+
+    header {
+      background-color: #006064;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #004d40;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #00796b;
+    }
+
+    .main {
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #004d40;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .logout {
+      float: right;
+      margin: 10px;
+      background-color: #e53935;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cleaner Dashboard</h1>
+    <p>Welcome to your assigned task center</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Assigned Tasks</a>
+    <a href="#">Completed</a>
+    <button class="logout" onclick="logout()">Logout</button>
+  </nav>
+
+  <div class="main">
+    <div class="card">
+      <h2>Today's Assigned Complaints</h2>
+      <p>Tasks assigned by the admin will appear here with location and description.</p>
+    </div>
+
+    <div class="card">
+      <h2>Mark Complaint as Cleaned</h2>
+      <p>Upload a photo and confirm task completion. (Firebase support coming soon)</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Smart Waste App | Cleaner Dashboard
+  </footer>
+
+  <script>
+    function logout() {
+      alert("Logged out!");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>

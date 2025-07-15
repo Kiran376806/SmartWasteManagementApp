@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Citizen Dashboard | Smart Waste App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #0f2027;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #203a43;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #2c5364;
+    }
+
+    .logout-btn {
+      float: right;
+      background: #ff4d4d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logout-btn:hover {
+      background: #e60000;
+    }
+
+    .main-content {
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0f2027;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #203a43;
+      color: #fff;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Waste Management</h1>
+    <p>Citizen Dashboard</p>
+  </header>
+
+  <nav>
+    <a href="citizen-dashboard.html">Home</a>
+    <a href="profile.html">Your Profile</a>
+    <a href="raise-complaint.html">Raise Complaint</a>
+    <a href="#">My Complaints</a>
+    <a href="#">Settings</a>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </nav>
+
+  <div class="main-content">
+    <div class="card">
+      <h2>Welcome, Citizen!</h2>
+      <p>From here you can raise complaints, check your profile, and track issues in your area.</p>
+    </div>
+
+    <div class="card">
+      <h2>Quick Actions</h2>
+      <ul>
+        <li><a href="complaint.html">📌 File a new complaint</a></li>
+        <li><a href="#">📊 View complaint history</a></li>
+        <li><a href="profile.html">👤 View your profile</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Smart Waste App | Developed by Kiran 💚
+  </footer>
+
+  <script>
+    function logout() {
+      alert("You have been logged out.");
+      window.location.href = "index.html"; // go back to login
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | Smart Waste App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+    }
+
+    header {
+      background-color: #37474f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #263238;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #455a64;
+    }
+
+    .logout {
+      float: right;
+      margin: 10px;
+      background-color: #e53935;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .main {
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #37474f;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #263238;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Admin Dashboard</h1>
+    <p>Manage complaints, cleaners, and tasks efficiently</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">All Complaints</a>
+    <a href="#">Assign to Cleaner</a>
+    <a href="#">Cleaner Performance</a>
+    <button class="logout" onclick="logout()">Logout</button>
+  </nav>
+
+  <div class="main">
+    <div class="card">
+      <h2>All Submitted Complaints</h2>
+      <p>View pending, assigned, and completed complaints. (Firebase DB integration coming soon)</p>
+    </div>
+
+    <div class="card">
+      <h2>Assign Complaints to Cleaners</h2>
+      <p>Select complaint and assign it to an available cleaner by area/zone.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Smart Waste App | Admin Panel
+  </footer>
+
+  <script>
+    function logout() {
+      alert("Logged out!");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
